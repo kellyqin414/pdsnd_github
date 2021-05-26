@@ -120,7 +120,7 @@ def station_stats(df):
     popular_start_to_end=df['start_to_end'].mode()[0]
     print('The most frequent combination of start station and end station trip is {}.'.format(popular_start_to_end))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+
     print('-'*40)
 
 
