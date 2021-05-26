@@ -22,7 +22,7 @@ def get_filters():
     while city not in cities:
         city=input('Enter the city you want to explore:').lower()
         if city not in cities:
-            print('Please enter again,there are no data related')
+            print('Please enter again,there is no data related')
     # TO DO: get user input for month (all, january, february, ... , june)
     months=['january','feburary','march','april','may','june','all']
     month=''
