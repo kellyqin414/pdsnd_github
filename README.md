@@ -13,5 +13,5 @@ This project allows access to the bikeshare data from new york city, washington 
 bikeshare.py
 
 ### Credits
-Kelly Qin, uadacity course
+Kelly Qin, uadacity courses
 
