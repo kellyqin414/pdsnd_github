@@ -176,9 +176,7 @@ def user_stats(df):
 
 
 def view_data(df):
-    view_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?").lower()
-    if view_data == 'yes':
-        print(df.head())
+    print(df.head())
     start_loc = 0
     while True:
         view_display = input("Do you wish to continue?: ").lower()
