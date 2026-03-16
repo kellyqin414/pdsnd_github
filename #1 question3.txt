@@ -1,0 +1,10 @@
+SELECT t1.category, t1.percentile, COUNT(t1.id)
+FROM (SELECT NTILE(4) OVER (ORDER BY rental_duration) AS percentile, c.name category, f.film_id id
+FROM film f
+JOIN film_category fm
+ON f.film_id=fm.film_id
+JOIN category c
+ON c.category_id=fm.category_id
+WHERE c.name= 'Animation'or c.name='Children' or  c.name='Classics' or c.name='Comedy' or c.name='Family' or c.name='Music') AS t1
+GROUP BY 1, 2
+ORDER BY 1, 2
